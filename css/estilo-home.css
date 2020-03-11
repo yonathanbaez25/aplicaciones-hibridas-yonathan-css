@@ -1,0 +1,107 @@
+/* Imagen paginas */
+#imgpaginas {
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
+#imgpaginas div span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px 0px;
+}
+#imgpaginas div a {
+  color: #00000;
+}
+#paisajes:hover {
+  animation: Rotar 2s;
+}
+@-webkit-keyframes Rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#retratos:hover {
+  animation: transladar 2s;
+}
+@-webkit-keyframes transladar {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  100% {
+    transform: translate(0px 0px);
+  }
+}
+/* Cuerpo de la pagina */
+@media (max-width: 900px) {
+  .contenido{
+    width: 100%;
+  }
+  header{
+    min-height: 200px;
+  }
+  header h1{
+    width: 100%;
+    text-align: center;
+  }
+  #menu-principal{
+    width: 100%;
+  }
+  ul {
+    text-align: center;
+  }
+  #central{
+    max-width: 96%;
+    margin: 2%;
+  }
+  #imgcentral{
+    max-width: 900px;
+    width: 100%;
+    background-color: #82c3a6;
+  }
+  #imgpaginas div{
+    max-width: 100%;
+  }
+  #imgpaginas div a img{
+    max-width: 90%;
+    border: 1px;
+    margin: 5%;
+  }
+}
+@media (min-width: 900px) {
+  .contenido{
+    width: 900px;
+  }
+  header{
+    width: 900px;
+    min-height: 80px;
+  }
+  #imgcentral{
+    min-width: 900px;
+    height: auto;
+    background-color: #82c3a6;
+  }
+  #central{
+    max-width: 80%;
+    margin: 2% 10%;
+  }
+  #imgpaginas div{
+    max-width: 50%;
+  }
+  #imgpaginas div a img{
+    max-width: 90%;
+    border: 1px;
+    margin: 5%
+  }
+}
